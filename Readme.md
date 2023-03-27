@@ -16,8 +16,7 @@ create_spark_scala_sbt_project.sh
 This bash script creates the folder structure and configuration files for a new Spark Scala SBT project. The generated project will include the necessary dependencies for Spark SQL, Spark SQL Kafka, and Delta Lake.
 #### Usage
 
-bash
-```
+bash```
 ./create_spark_scala_sbt_project.sh <project_name>
 ```
 Replace <project_name> with your desired project name.
@@ -30,42 +29,36 @@ Usage
     Replace the Kafka broker address, topic name, and paths for the Delta Lake table and checkpoint location in the script.
     Run the Spark job using SBT:
 
-bash
-```
+bash```
 sbt run
 ```
 Setup Instructions
 
     Clone this repository:
 
-bash
-```
+bash```
 git clone https://github.com/your_username/spark-scala-sbt-project-creator.git
-
+```
     Navigate to the project directory:
-```
-bash
-```
+
+bash```
 cd spark-scala-sbt-project-creator
-
+```
     Give execute permissions to the bash script:
-```
-bash
-```
-chmod +x create_spark_scala_sbt_project.sh
 
+bash```
+chmod +x create_spark_scala_sbt_project.sh
+```
     Run the bash script with your desired project name:
-```
-bash
-```
+
+bash```
 ./create_spark_scala_sbt_project.sh MySparkProject
 ```
     Copy the KafkaToDeltaLake.scala script into the src/main/scala/<project_name> folder of your SBT project.
     Replace the Kafka broker address, topic name, and paths for the Delta Lake table and checkpoint location in the script.
     Run the Spark job using SBT:
 
-bash
-```
+bash```
 sbt run
 ```
 License
